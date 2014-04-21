@@ -1,6 +1,7 @@
 #!/usr/bin/perl
 # Turn FIMO matches into UCSC Genome Browser tracks
 # Usage: perl fimo-to-tracks.perl input id gene chromosome start finish strand
+# Requires sorted input, e.g. 'sort -n fimo-output.txt'
 # @author Chris Herdt
 use warnings;
 
