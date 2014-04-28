@@ -11,3 +11,6 @@ and some is hanging around in Google Docs.
 4. Compare matches from FIMO to UW DNase hypersensitivity sites/hotspots in cerebrum tissue. This uses mm9, which is why we used mm9 above.
 5. Are the motifs of interest that align to DNase HS hotspots more common in the co-regulated genes? (and how do we normalize this?)
 6. If all else fails, run oPOSSUM3 using the co-regulated genes as foreground and the other genes as background.
+
+### hotspots1-length.tsv
+Something cobbled together. It lists the length of the total hotspots in each gene region (the sum of the count of basepairs) and also the count of motifs that overlap any of those hotspots. Makes perfect sense, right?
