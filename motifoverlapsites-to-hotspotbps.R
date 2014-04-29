@@ -14,7 +14,7 @@ cat("Read in table of hotspot lengths...\n")
 data = read.table("/Users/cherdt/GCB535/project/hotspot1-lengths.tsv", TRUE)
 
 # Create a subset of the table with only the motif sites
-motifsites <- data[,c(6,7,8,9,10)]
+motifsites <- data[,c(6:15)]
 
 hotspotlengths <- data[,c(5)]
 # Create a table containing the ratio of motif sites to hotspot basepairs
@@ -38,4 +38,19 @@ wilcox.test(sitesperhotspotbase[1:6,4],sitesperhotspotbase[7:16,4], alternative=
 
 cat(paste(header, colnames(sitesperhotspotbase[5])))
 wilcox.test(sitesperhotspotbase[1:6,5],sitesperhotspotbase[7:16,5], alternative=c("greater"))
+
+cat(paste(header, colnames(sitesperhotspotbase[6])))
+wilcox.test(sitesperhotspotbase[1:6,6],sitesperhotspotbase[7:16,6], alternative=c("greater"))
+
+cat(paste(header, colnames(sitesperhotspotbase[7])))
+wilcox.test(sitesperhotspotbase[1:6,7],sitesperhotspotbase[7:16,7], alternative=c("greater"))
+
+cat(paste(header, colnames(sitesperhotspotbase[8])))
+wilcox.test(sitesperhotspotbase[1:6,8],sitesperhotspotbase[7:16,8], alternative=c("greater"))
+
+cat(paste(header, colnames(sitesperhotspotbase[9])))
+wilcox.test(sitesperhotspotbase[1:6,9],sitesperhotspotbase[7:16,9], alternative=c("greater"))
+
+cat(paste(header, colnames(sitesperhotspotbase[10])))
+wilcox.test(sitesperhotspotbase[1:6,10],sitesperhotspotbase[7:16,10], alternative=c("greater"))
 
